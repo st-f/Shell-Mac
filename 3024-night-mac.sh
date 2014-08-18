@@ -31,32 +31,32 @@ color20="80/7d/7c" # Base 04
 color21="d6/d5/d4" # Base 06
 
 # 16 color space
-printf "\e]4;0;rgb:$color00\e\\"
-printf "\e]4;1;rgb:$color01\e\\"
-printf "\e]4;2;rgb:$color02\e\\"
-printf "\e]4;3;rgb:$color03\e\\"
-printf "\e]4;4;rgb:$color04\e\\"
-printf "\e]4;5;rgb:$color05\e\\"
-printf "\e]4;6;rgb:$color06\e\\"
-printf "\e]4;7;rgb:$color07\e\\"
-printf "\e]4;8;rgb:$color08\e\\"
-printf "\e]4;9;rgb:$color09\e\\"
-printf "\e]4;10;rgb:$color10\e\\"
-printf "\e]4;11;rgb:$color11\e\\"
-printf "\e]4;12;rgb:$color12\e\\"
-printf "\e]4;13;rgb:$color13\e\\"
-printf "\e]4;14;rgb:$color14\e\\"
-printf "\e]4;15;rgb:$color15\e\\"
+printf "\x1B]4;0;rgb:$color00\e\\"
+printf "\x1B]4;1;rgb:$color01\e\\"
+printf "\x1B]4;2;rgb:$color02\e\\"
+printf "\x1B]4;3;rgb:$color03\e\\"
+printf "\x1B]4;4;rgb:$color04\e\\"
+printf "\x1B]4;5;rgb:$color05\e\\"
+printf "\x1B]4;6;rgb:$color06\e\\"
+printf "\x1B]4;7;rgb:$color07\e\\"
+printf "\x1B]4;8;rgb:$color08\e\\"
+printf "\x1B]4;9;rgb:$color09\e\\"
+printf "\x1B]4;10;rgb:$color10\e\\"
+printf "\x1B]4;11;rgb:$color11\e\\"
+printf "\x1B]4;12;rgb:$color12\e\\"
+printf "\x1B]4;13;rgb:$color13\e\\"
+printf "\x1B]4;14;rgb:$color14\e\\"
+printf "\x1B]4;15;rgb:$color15\e\\"
 
 
 # 256 color space
 if [ "$TERM" != linux ]; then
-  printf "\e]4;16;rgb:$color16\e\\"
-  printf "\e]4;17;rgb:$color17\e\\"
-  printf "\e]4;18;rgb:$color18\e\\"
-  printf "\e]4;19;rgb:$color19\e\\"
-  printf "\e]4;20;rgb:$color20\e\\"
-  printf "\e]4;21;rgb:$color21\e\\"
+  printf "\x1B]4;16;rgb:$color16\e\\"
+  printf "\x1B]4;17;rgb:$color17\e\\"
+  printf "\x1B]4;18;rgb:$color18\e\\"
+  printf "\x1B]4;19;rgb:$color19\e\\"
+  printf "\x1B]4;20;rgb:$color20\e\\"
+  printf "\x1B]4;21;rgb:$color21\e\\"
 fi
 
 # clean up
